@@ -14,7 +14,7 @@ resolution = [1280, 720]
 screen = pyg.display.set_mode((resolution[0], resolution[1]))
 
 # images
-background = pyg.image.load(f"{directory}\\images\\main_office.gif")
+background = pyg.image.load(f"{directory}\\images\\main_office.png")
 background = pyg.transform.scale(background, (resolution[0], resolution[1]))
 
 icon = pyg.image.load(f"{directory}\\images\\icon.jpg")
@@ -39,8 +39,8 @@ while running:
             running = False
 
     screen.blit(background, (0, 0))
-    screen.blit(time_text, (1110, 10))
-    screen.blit(night_text, (1185, 50))
+    screen.blit(time_text, (1110, 25))
+    screen.blit(night_text, (1185, 65))
     screen.blit(battery_text, (20, 600))
     screen.blit(usage_text, (20, 620))
 
